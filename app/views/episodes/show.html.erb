@@ -1,0 +1,4 @@
+<h1>A Particular Episode</h1>
+
+<%= render partial: 'comments/form', locals: { commentable: @episode } %>
+<%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @episode } %>
