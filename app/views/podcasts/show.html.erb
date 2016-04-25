@@ -5,3 +5,7 @@
   <p><strong>Genre:</strong><%= @podcast.genre %></p>
   <p><strong>Host:</strong><%= @podcast.podcaster %></p>
 </div>
+
+<div>
+  <%= render @podcast.episodes %>
+</div>
