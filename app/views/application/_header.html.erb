@@ -1,0 +1,15 @@
+<header>
+  <nav>
+    <div class='login'>
+      <% if current_user %>
+        <ul>
+          <li><%= current_user.email %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+      <% else %>
+          <li><%= link_to "Sign In", new_user_session_path %></li>
+          <li><%= link_to "Register", new_user_registration_path %></li>
+        </ul>
+      <% end %>
+    </div>
+  </nav>
+</header>
