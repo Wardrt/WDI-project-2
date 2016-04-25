@@ -3,7 +3,11 @@
     <div class='login'>
       <% if current_user %>
         <ul>
-          <li><%= current_user.email %></li>
+          <% if current_user.username == nil %>
+            <li><%= current_user.email %></li>
+          <% else %>
+            <li><%= current_user.username %></li>
+          <% end %>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
       <% else %>
           <li><%= link_to "Sign In", new_user_session_path %></li>
