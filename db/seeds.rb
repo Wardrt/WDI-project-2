@@ -7,4 +7,4 @@ p1 = Podcast.create!(title: "Test",
 e1 = p1.episodes.create!(title: "Test",
                         description: "This is a test",
                         guest: "Some Guy",
-                        url: "she-didnt-text-back/she-didnt-text-back-podcast-24")
+                        url: "259962866")
