@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :comments, only: [:create, :destroy]
     end
   end
+  resources :follows, only: [:create, :destroy]
 
   root "statics#home"
 end

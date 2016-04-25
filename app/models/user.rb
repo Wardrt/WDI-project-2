@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
   has_many :identities, dependent: :destroy
+  has_many :follows
+  has_many :podcasts, through: :follows
 
   mount_uploader :image, ProfilePictureUploader
 
