@@ -10,6 +10,12 @@ class User < ActiveRecord::Base
 
   mount_uploader :image, ProfilePictureUploader
 
+  # def is_following?
+  #   @podcast = Podcast.find(podcast_id: params[:podcast_id]) if params[:podcast_id]
+  #   @user    = User.find(user_id: current_user.id)
+  #   @follow  = Follow.find(@podcast, @user)
+  # end
+
   def self.find_for_oauth(auth, signed_in_resource = nil)
     raise
   end
