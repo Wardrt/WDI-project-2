@@ -1,7 +1,8 @@
 class PodcastsController < ApplicationController
 
   def index
-    @podcasts = Podcast.all
+    @q = Podcast.search(params[:q])
+    @podcasts = @q.result(distinct: true)
   end
 
   def show
