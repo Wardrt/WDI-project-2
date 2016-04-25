@@ -6,7 +6,9 @@ Rails.application.routes.draw do
       resources :comments, only: [:create, :destroy]
     end
   end
-  resources :follows, only: [:create, :destroy]
+  delete "podcasts/:id/unfollow", to: "follows#destroy", as: :destroy_follow
+  post "/follows", to: "follows#create", as: :create_follow
+
 
   root "statics#home"
 end
