@@ -6,7 +6,7 @@
       <li><strong>Description:</strong><%= podcast.description %></li>
       <li><strong>Genre:</strong><%= podcast.genre %></li>
       <li><strong>Host:</strong><%= podcast.podcaster %></li>
-      <%= button_to "Follow", follows_path %>
+      <%= button_to "Follow", follows_path(podcast_id: podcast.id) %>
     </ul>
   </li>
 </div>
