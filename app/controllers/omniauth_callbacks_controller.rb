@@ -4,7 +4,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
   
   def authorize(provider)
-    @user = User.find_for_oauth(env["omniauth.auth"], current_user)
+    @user = User.find_for_oauth(request.env["omniauth.auth"], current_user)
 
     if @user.persisted?
       # Sign in a user and tries to redirect first to the stored location 
@@ -19,3 +19,4 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 end
+
