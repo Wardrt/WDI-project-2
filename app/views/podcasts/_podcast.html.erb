@@ -1,15 +1,13 @@
 
 
 <div class="row" data-equalizer>
-  <div class="medium-4" data-equalizer-watch>
+  <div class="medium-4">
     <div class="image-wrapper overlay-slide-in-left">
       <img src="<%= podcast.image %>">
       <div class="image-overlay-content">
-        <h2>.overlay-slide-in-left</h2>
-        <p><%= podcast.description %></p>
-        <hr>
-        <h3><%= podcast.podcaster %></h3>
-        <a href="/podcast/<%= podcast.id %>" class="button">View Podcast</a>
+        <h2><%= podcast.podcaster %></h2>
+        <p><%= podcast.title %></p>
+        <a href="/podcasts/<%= podcast.id %>" class="button">View Podcast</a>
       </div>
     </div>
   </div>
