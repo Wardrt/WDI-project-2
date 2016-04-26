@@ -1,5 +1,6 @@
 class StaticsController < ApplicationController
   def home
-    @podcast = Podcast.last
+    podcasts = Podcast.all.shuffle
+    @podcast = podcasts.first
   end
 end
