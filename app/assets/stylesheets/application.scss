@@ -192,6 +192,10 @@ html, body {
   }
 }
 
+.columns + .columns:last-child {
+  float: left;
+}
+
 
 
 

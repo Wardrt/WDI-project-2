@@ -1,14 +1,10 @@
-
-
-<div class="row" data-equalizer>
-  <div class="medium-4">
-    <div class="image-wrapper overlay-slide-in-left">
-      <img src="<%= podcast.image %>">
-      <div class="image-overlay-content">
-        <h2><%= podcast.podcaster %></h2>
-        <p><%= podcast.title %></p>
-        <a href="/podcasts/<%= podcast.id %>" class="button">View Podcast</a>
-      </div>
+<div class="medium-4 columns" data-equalizer-watch>
+  <div class="image-wrapper overlay-slide-in-left">
+    <img src="<%= podcast.image %>">
+    <div class="image-overlay-content">
+      <h2><%= podcast.podcaster %></h2>
+      <p><%= podcast.title %></p>
+      <a href="/podcasts/<%= podcast.id %>" class="button">View Podcast</a>
     </div>
   </div>
 </div>
