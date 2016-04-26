@@ -39,6 +39,7 @@ html, body {
   height: -o-calc(100% - 45px); /* opera */
   height: -webkit-calc(100% - 45px); /* google, safari */
   height: -moz-calc(100% - 45px); /* firefox */
+  margin-bottom: 45px;
   h1 {
     margin: 0;
     background-image: url("/images/microphone-background.jpeg");
@@ -53,7 +54,6 @@ html, body {
       1px 1px 0 #000;  
   }
 }
-
 
 
 

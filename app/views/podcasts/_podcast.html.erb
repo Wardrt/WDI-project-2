@@ -1,11 +1,11 @@
 <div>
   <li>
     <ul>
-      <li><a href="/podcasts/<%= podcast.id %>"><strong>Title:</strong><%= podcast.title %></a></li>
+      <li><a href="/podcasts/<%= podcast.id %>"><strong>Title: </strong><%= podcast.title %></a></li>
       <li><strong>Image:</strong><img src="<%= podcast.image %>"></li>
-      <li><strong>Description:</strong><%= podcast.description %></li>
-      <li><strong>Genre:</strong><%= podcast.genre %></li>
-      <li><strong>Host:</strong><%= podcast.podcaster %></li>
+      <li><strong>Description: </strong><%= podcast.description %></li>
+      <li><strong>Genre: </strong><%= podcast.genre %></li>
+      <li><strong>Host: </strong><%= podcast.podcaster %></li>
       <% if user_signed_in? %>
         <% if podcast.users.include? current_user %>
           <%= button_to "Unfollow", destroy_follow_path(podcast.id), method: :delete %>
