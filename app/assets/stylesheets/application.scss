@@ -46,12 +46,31 @@ html, body {
   }
 }
 
-#landing-page-second{
+#landing-page-second {
   div {
     img {
       width: 100%;
       height: calc(100vh - 45px);
     }
+  }
+}
+
+#landing-page-second:hover #landing-page-button {
+  
+}
+
+#landing-page-last {
+  background: #180651;
+  height: calc(50% - 45px);
+  height: -o-calc(50% - 45px);
+  height: -webkit-calc(50% - 45px);
+  height: -moz-calc(50% - 45px);
+  h3 {
+    margin: 0;
+    line-height: 100%;
+    text-align: center;
+    padding-top: 10%;
+    color: #756100;
   }
 }
 
@@ -74,6 +93,21 @@ html, body {
         width: 100%;
         height: 50vh;
       }
+    }
+  }
+
+  #landing-page-last {
+    background: #180651;
+    height: calc(50% - 45px);
+    height: -o-calc(50% - 45px);
+    height: -webkit-calc(50% - 45px);
+    height: -moz-calc(50% - 45px);
+    h3 {
+      margin: 0;
+      line-height: 100%;
+      text-align: center;
+      padding-top: 20%;
+      color: #756100;
     }
   }
 }

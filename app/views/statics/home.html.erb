@@ -2,5 +2,12 @@
   <img src="/images/microphone-background.jpeg">
 </div>
 <div id="landing-page-second" data-equalizer>
-  <div class="medium-12" data-equalizer-watch><img src="<%= @podcast.image %>"></div>
+  <div class="medium-12" data-equalizer-watch>
+    <a href="/podcasts/<%= @podcast.id %>">
+      <img src="<%= @podcast.image %>">
+    </a>
+  </div>
+</div>
+<div id="landing-page-last">
+  <h3>Podable is an online database of podcasts! Search for your favourite podcast and interact with others in the comments!</h3>
 </div>
