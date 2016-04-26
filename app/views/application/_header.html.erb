@@ -14,10 +14,10 @@
         <ul class="right">
           <% if current_user %>
             <% if current_user.username == nil %>
-            <li class="name"><h1><a href="/users/<%= current_user.id %>"><%= current_user.email %></a></h1></li>
-          <% else %>
-            <li class="name"><h1><a href="/users/<%= current_user.id %>"><%= current_user.username %></a></h1></li>
-          <% end %>
+              <li class="name"><h1><a href="/users/<%= current_user.id %>"><%= current_user.email %></a></h1></li>
+            <% else %>
+              <li class="name"><h1><a href="/users/<%= current_user.id %>"><%= current_user.username %></a></h1></li>
+            <% end %>
             <li class="has-dropdown">
               <a href="">Profile</a>
               <ul class="dropdown">
@@ -26,10 +26,10 @@
                 <li class="divider"></li>
                 <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
               </ul>
-          </li>
+            </li>
           <% else %>
-          <li><%= link_to "Sign In", new_user_session_path %></li>
-          <li><%= link_to "Register", new_user_registration_path %></li>
+            <li><%= link_to "Sign In", new_user_session_path %></li>
+            <li><%= link_to "Register", new_user_registration_path %></li>
           <% end %>
 
         </ul>

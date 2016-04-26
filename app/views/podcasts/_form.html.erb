@@ -1,20 +1,40 @@
-<div class="tertiary-nav">
+
+  <div class="row search-row">
+    <div class="medium-8 medium-centered columns">
+      <ul class="inline-list">
+        <%= search_form_for @q do |f| %>
+          <div class="small-8 columns input">
+            <%= f.text_field :title_or_podcaster_cont, placeholder: 'Search...' %>
+          </div>
+          <div class="small-4 columns">
+            <%= f.submit "Submit", class: "button" %>
+          </div>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+<!-- <div class="tertiary-nav">
   <div class="row top-bar">
     <div class="small-12 columns">
       <ul class="inline-list right">
+        <li><a href="#" class="search-icon "><i class="fi-magnifying-glass large icon"></i></a> </li>
         <li class="search-field">
-          <%= search_form_for @q do |f| %>
+          <%#= search_form_for @q do |f| %>
             <div class="row collapse">
-              <div class="small-12 columns">
-                <%= f.text_field :title_or_podcaster_cont %>
+              <div class="small-8 columns input">
+                <%#= f.text_field :title_or_podcaster_cont %>
               </div>
-              <div>
-                <%= f.submit %>
+              <div class="small-4 columns">
+                <%#= f.submit %>
               </div>
             </div>
-          <% end %>
+          <%# end %>
         </li>
       </ul>
     </div>
   </div>
-</div>
+</div> -->
