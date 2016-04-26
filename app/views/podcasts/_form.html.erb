@@ -1,9 +1,20 @@
-<%= search_form_for @q do |f| %>
-  <p>
-    <%= f.label :title_or_host_cont %>
-    <%= f.text_field :title_or_podcaster_cont %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<div class="tertiary-nav">
+  <div class="row top-bar">
+    <div class="small-12 columns">
+      <ul class="inline-list right">
+        <li class="search-field">
+          <%= search_form_for @q do |f| %>
+            <div class="row collapse">
+              <div class="small-12 columns">
+                <%= f.text_field :title_or_podcaster_cont %>
+              </div>
+              <div>
+                <%= f.submit %>
+              </div>
+            </div>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
