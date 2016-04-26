@@ -1,6 +1,6 @@
 <div id="landing-page-first">
-  <h1>Welcome to Podable!</h1>
+  <img src="/images/microphone-background.jpeg">
 </div>
-<div id="landing-page-second">
-  <%= render @podcast %>
+<div id="landing-page-second" data-equalizer>
+  <div class="medium-12" data-equalizer-watch><img src="<%= @podcast.image %>"></div>
 </div>

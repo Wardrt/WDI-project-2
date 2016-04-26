@@ -36,27 +36,46 @@ html, body {
 #landing-page-first {
   margin: 0;
   height: calc(100% - 45px);
-  height: -o-calc(100% - 45px); /* opera */
-  height: -webkit-calc(100% - 45px); /* google, safari */
-  height: -moz-calc(100% - 45px); /* firefox */
+  height: -o-calc(100% - 45px);
+  height: -webkit-calc(100% - 45px);
+  height: -moz-calc(100% - 45px);
   margin-bottom: 45px;
-  h1 {
-    margin: 0;
-    background-image: url("/images/microphone-background.jpeg");
-    background-size: cover;
-    line-height: calc(100vh - 45px);
-    text-align: center;
-    color: white;
-    text-shadow:
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;  
+  img {
+    width: 100%;
+    height: calc(100vh - 45px);
   }
 }
 
+#landing-page-second{
+  div {
+    img {
+      width: 100%;
+      height: calc(100vh - 45px);
+    }
+  }
+}
 
+@media (max-width: 800px) {
+  #landing-page-first {
+    margin: 0;
+    height: calc(50% - 45px);
+    height: -o-calc(50% - 45px);
+    height: -webkit-calc(50% - 45px);
+    height: -moz-calc(50% - 45px);
+    img {
+      width: 100%;
+      height: calc(50vh - 45px);
+    }
+  }
 
-
+  #landing-page-second{
+    div {
+      img {
+        width: 100%;
+        height: 50vh;
+      }
+    }
+  }
+}
 
 
