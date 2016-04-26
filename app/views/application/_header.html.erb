@@ -16,7 +16,7 @@
             <% if current_user.username == nil %>
             <li class="name"><h1><a href="/users/<%= current_user.id %>"><%= current_user.email %></a></h1></li>
           <% else %>
-            <li class="name"><h1><%= current_user.username %></h1></li>
+            <li class="name"><h1><a href="/users/<%= current_user.id %>"><%= current_user.username %></a></h1></li>
           <% end %>
             <li class="has-dropdown">
               <a href="">Profile</a>
