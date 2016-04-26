@@ -1,18 +1,16 @@
-<div>
-  <li>
-    <ul>
-      <li><a href="/podcasts/<%= podcast.id %>"><strong>Title: </strong><%= podcast.title %></a></li>
-      <li><strong>Image:</strong><img src="<%= podcast.image %>"></li>
-      <li><strong>Description: </strong><%= podcast.description %></li>
-      <li><strong>Genre: </strong><%= podcast.genre %></li>
-      <li><strong>Host: </strong><%= podcast.podcaster %></li>
-      <% if user_signed_in? %>
-        <% if podcast.users.include? current_user %>
-          <%= button_to "Unfollow", destroy_follow_path(podcast.id), method: :delete %>
-        <% else %>
-          <%= button_to "Follow", create_follow_path(podcast_id: podcast.id, id: current_user.id) %>
-        <% end %>
-      <% end %>
-    </ul>
-  </li>
+
+
+<div class="row" data-equalizer>
+  <div class="medium-4" data-equalizer-watch>
+    <div class="image-wrapper overlay-slide-in-left">
+      <img src="<%= podcast.image %>">
+      <div class="image-overlay-content">
+        <h2>.overlay-slide-in-left</h2>
+        <p><%= podcast.description %></p>
+        <hr>
+        <h3><%= podcast.podcaster %></h3>
+        <a href="/podcast/<%= podcast.id %>" class="button">View Podcast</a>
+      </div>
+    </div>
+  </div>
 </div>
