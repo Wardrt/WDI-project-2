@@ -1,20 +1,28 @@
-<!-- <li>
-  <ul>
-    <li><%#= comment.user.try(:name) %></li>
-    <li><%#= comment.comment %></li>
-  </ul>
-</li> -->
-
-
-
-
-
-
-
 <div class="comment">
   <section class="top">
     <h6 class="byline">
-      <a href="/users/<%= comment.user_id %>"><i class="icon"></i><%= comment.user.try(:name) %></a>
+      <% if current_user.username == nil %>
+        <a href="/users/<%= current_user.id %>">
+          <% if current_user.image == nil %>
+            <i class="icon"></i>
+          <% else %>
+            <img src="<%= current_user.image %>">
+          <% end %>
+        <%= current_user.email %></a>
+      <% else %>
+        <a href="/users/<%= current_user.id %>">
+          <% if current_user.image == nil %>
+            <i class="icon"></i>
+          <% else %>
+            <img src="<%= current_user.image %>">
+          <% end %>
+        <%= current_user.username %></a>
+      <% end %>
+      <small>
+        <span class="data">
+          Added <%= distance_of_time_in_words(Time.now, comment.created_at) %> ago
+        </span>
+      </small>
     </h6>
   </section>
   <section class="content">
