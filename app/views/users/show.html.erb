@@ -1,8 +1,22 @@
-<p><%= @user.username %></p>
-<p><%= @user.name %></p>
-<p>
-  <b>Image:</b>
-  <%= link_to image_tag(@user.image.thumb.url), @user.image.url %>
-</p>
-
+<div class="row">
+  <div class="large-4 large-offset-4 columns">
+    <div class="panel text-center">
+      <% if @user.image == nil %>
+        <img class="circle" src="/images/placeholder-user.png">
+      <% else %>
+        <img class="circle" src="<%= @user.image %>">
+      <% end %>
+      <h3><%= @user.name %></h3>
+      <% if @user.username == nil %>
+        <p><%= @user.email %></p>
+      <% else %>
+        <p><%= @user.username %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
+<hr>
 <p><%= render @user.podcasts %></p>
+
+
+
