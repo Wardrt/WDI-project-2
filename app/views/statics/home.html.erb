@@ -3,12 +3,15 @@
 </div>
 <div id="landing-page-second" data-equalizer>
   <div class="medium-12" data-equalizer-watch>
-    <div class="img-wrapper">
-      <a class="button expand view-podcast" href="/podcasts/<%= @podcast.id %>">View Podcast</a>
-      <img src="<%= @podcast.image %>">
+    <div class="image-wrapper overlay-fade-in">
+      <img src="<%= @podcast.image %>" />
+      <div class="image-overlay-content">
+        <h2><%= @podcast.title %></h2>
+        <a href="/podcasts/<%= @podcast.id %>/episodes" class="button">View Podcast</a>
+      </div>
     </div>
   </div>
-  <div id="landing-page-last">
-    <h3>Podable is an online database of podcasts! Search for your favourite podcast and interact with others in the comments!</h3>
-  </div>
+</div>
+<div id="landing-page-last">
+  <h3>Podable is an online database of podcasts! Search for your favourite podcast and interact with others in the comments!</h3>
 </div>
