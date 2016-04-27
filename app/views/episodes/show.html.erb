@@ -13,8 +13,11 @@
 <% if user_signed_in? %>
   <%= render partial: 'comments/form', locals: { commentable: @episode } %>
 <% end %>
-<%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @episode } %>
-
+<div class="row">
+  <div class="large-8 small-12 columns"> 
+    <%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @episode } %>
+  </div>
+</div>
 
 
 

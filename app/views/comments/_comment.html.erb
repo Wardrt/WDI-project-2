@@ -1,8 +1,24 @@
-<li>
+<!-- <li>
   <ul>
-    <li><%= comment.user.try(:name) %></li>
-    <li><%= comment.title %></li>
-    <li><%= comment.comment %></li>
-    <%#= link_to 'Delete Comment', podcast_episode_comment_path(comment, commentable_type: commentable.class.to_s.underscore, commentable_id: commentable.id, episode_id: @episode.id), method: :delete %>
+    <li><%#= comment.user.try(:name) %></li>
+    <li><%#= comment.comment %></li>
   </ul>
-</li> 
+</li> -->
+
+
+
+
+
+
+
+<div class="comment">
+  <section class="top">
+    <h6 class="byline">
+      <a href="/users/<%= comment.user_id %>"><i class="icon"></i><%= comment.user.try(:name) %></a>
+    </h6>
+  </section>
+  <section class="content">
+    <p><%= comment.comment %></p>
+  </section>
+</div>
+<hr>
