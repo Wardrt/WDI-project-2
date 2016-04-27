@@ -159,7 +159,10 @@ html, body {
   position: absolute;
   overflow: hidden;
   top: 0;
-  left: 0
+  left: 0;
+  h2 {
+    font-family: 'Cinzel', serif;
+  }
 }
 
 .overlay-slide-in-left {
@@ -234,16 +237,14 @@ html, body {
     display: inline-block;
     text-decoration: none;
     padding: 7px 14px; 
-    background: #FFF;
-    color: #222;
+    background: #000;
+    color: #fff;
     text-transform: uppercase;
     box-shadow: 0 0 1px #000;
     position: relative;
-    border: 1px solid #999;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
+    border-radius: 7px;
     &:hover {
-      box-shadow: 0 0 5px #000;
+      background-color: #444;
     }
   }
   &:hover img {
