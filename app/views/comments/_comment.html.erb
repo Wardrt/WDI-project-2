@@ -1,22 +1,22 @@
 <div class="comment">
   <section class="top">
     <h6 class="byline">
-      <% if current_user.username == nil %>
-        <a href="/users/<%= current_user.id %>">
-          <% if current_user.image == nil %>
+      <% if comment.user.username == nil %>
+        <a href="/users/<%= comment.user_id %>">
+          <% if comment.user.image == nil %>
             <i class="icon"></i>
           <% else %>
-            <img src="<%= current_user.image %>">
+            <img src="<%= comment.user.image %>">
           <% end %>
-        <%= current_user.email %></a>
+        <%= comment.user.email %></a>
       <% else %>
-        <a href="/users/<%= current_user.id %>">
-          <% if current_user.image == nil %>
+        <a href="/users/<%= comment.user.id %>">
+          <% if comment.user.image == nil %>
             <i class="icon"></i>
           <% else %>
-            <img src="<%= current_user.image %>">
+            <img src="<%= comment.user.image %>">
           <% end %>
-        <%= current_user.username %></a>
+        <%= comment.user.username %></a>
       <% end %>
       <small>
         <span class="data">
