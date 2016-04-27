@@ -1,18 +1,3 @@
 <div>
-  <p><strong>Title:</strong><%= @podcast.title %></p>
-  <p><strong>Image:</strong><img src="<%= @podcast.image %>"></p>
-  <p><strong>Description:</strong><%= @podcast.description %></p>
-  <p><strong>Genre:</strong><%= @podcast.genre %></p>
-  <p><strong>Host:</strong><%= @podcast.podcaster %></p>
-  <% if user_signed_in? %>
-    <% if @podcast.users.include? current_user %>
-      <%= button_to "Unfollow", destroy_follow_path(@podcast.id), method: :delete %>
-    <% else %>
-      <%= button_to "Follow", create_follow_path(podcast_id: @podcast.id, id: current_user.id) %>
-    <% end %>
-  <% end %>
-</div>
-
-<div>
   <%= render @podcast.episodes %>
 </div>
