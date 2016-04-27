@@ -320,6 +320,13 @@ ul.inline-list {
   }
 }
 
+@media (max-width: 500px) {
+  .service-description {
+    font-size: 10px;
+  }
+}
+
+
 i.icon {
   display: inline-block;
   width: 32px;
