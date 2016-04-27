@@ -9,6 +9,7 @@ class EpisodesController < ApplicationController
   def show
     @episode = Episode.find(params[:id])
     @comments = @episode.comments
+    @podcast  = Podcast.find(params[:podcast_id])
   end
 
 end
