@@ -1,38 +1,50 @@
+<h3 class="margin-none"><a href="/podcasts/<%= @podcast.id %>/episodes/<%= episode.id %>"><%= episode.title %></a></h3>
+<table class="row border-none padding-none">
+  <tr class="padding-none">
+    <td class="wrapper border-none padding-none">
+      <table class="four columns border-none padding-none margin-none" >
+        <tr>
+         <td class="center border-none padding-none" align="center">
+           <center>
+             <img class="center" src="<%= @podcast.image %>" width="154" height="154">
+           </center>
+         </td>
+        </tr>
+      </table>
+    </td>
+    <td class="wrapper last border-none padding-none">
+      <table class="eight columns border-none padding-none margin-none">
+        <tr>
+          <td class="padding-none">
+            <iframe width="100%" height="158" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= episode.url %>&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<hr>
+
+
+
+
+
+
+
+<!-- 
 <table class="row border-none">
   <tr>
     <td class="wrapper last border-none">
       <table class="twelve columns border-none">
         <tr>
           <td>
-            <h3><a href="/podcasts/<%= @podcast.id %>/episodes/<%= episode.id %>"><%= episode.title %></a></h3>
+            
           </td>
         </tr>
       </table>
     </td>
   </tr>
-</table>
-<table class="row border-none">
-  <tr>
-    <td class="wrapper border-none">
-      <table class="four columns border-none" >
-        <tr>
-         <td class="center border-none" align="center">
-           <center>
-             <img class="center" src="<%= @podcast.image %>" width="128" height="154">
-           </center>
-         </td>
-        </tr>
-      </table>
-    </td>
-    <td class="wrapper last border-none">
-      <table class="eight columns border-none">
-        <tr>
-          <td>
-            <iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= episode.url %>&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+</table> -->
+
+
 

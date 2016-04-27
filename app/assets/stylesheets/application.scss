@@ -260,6 +260,20 @@ ul.inline-list {
   border: 0;
 }
 
+.padding-none {
+  padding: 0;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  iframe {
+    height: 122px;
+  }
+}
+
 
 
 
