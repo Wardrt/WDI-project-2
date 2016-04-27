@@ -1,12 +1,70 @@
-<div>
+<!-- <div>
   <li>
     <ul>
-      <li><strong>Title:</strong><%= episode.title %></li>
-      <li><strong>Description:</strong><%= episode.description %></li>
-      <% if episode.guest != nil %>
-        <li><strong>Guest:</strong><%= episode.guest %></li>
-      <% end %>
-      <li><strong>Podcast:</strong><iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= episode.url %>&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe></li>
+      <li><strong>Title:</strong><%#= episode.title %></li>
+      <li><strong>Description:</strong><%#= episode.description %></li>
+      <%# if episode.guest != nil %>
+        <li><strong>Guest:</strong><%#= episode.guest %></li>
+      <%# end %>
+      <li><strong>Podcast:</strong></li>
     </ul>
   </li>
-</div>
+</div> -->
+
+
+
+
+<table class="row">
+  <tr>
+    <td class="wrapper last">
+      <table class="twelve columns">
+        <tr>
+          <td>
+            <h2><%= episode.title %></h2>
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="row">
+  <tr>
+    <td class="wrapper">
+      <table class="four columns" >
+        <tr>
+         <td class="center" align="center">
+           <center>
+             <img class="center" src="<%= @podcast.image %>" width="128" height="154">
+           </center>
+         </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+    <td class="wrapper last">
+      <table class="eight columns">
+        <tr>
+          <td>
+            <iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= episode.url %>&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
