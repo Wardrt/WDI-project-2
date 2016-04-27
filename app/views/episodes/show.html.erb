@@ -1,11 +1,37 @@
-<div>
-  <p><strong>Title:</strong><%= @episode.title %></p>
-  <p><strong>Description:</strong><%= @episode.description %></p>
-  <% if @episode.guest != nil %>
-    <p><strong>Guest:</strong><%= @episode.guest %></p>
-  <% end %>
-  <p><strong>Podcast:</strong><iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= @episode.url %>&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe></p>
+<!-- <div>
+  <p><strong>Title:</strong><%#= @episode.title %></p>
+  <p><strong>Description:</strong><%#= @episode.description %></p>
+  <%# if @episode.guest != nil %>
+    <p><strong>Guest:</strong><%#= @episode.guest %></p>
+  <%# end %>
+  <p><strong>Podcast:</strong><iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%#= @episode.url %>&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe></p>
+</div> -->
+
+
+
+
+<br />
+<br />
+<div class="row">
+  <div class="small-6 small-centered columns">
+    <div class="service">
+      <div class="service-icon-box">
+        <img src="<%= @podcast.image %>" alt="" class="service-icon">
+      </div>
+      <h4 class="service-heading"><%= @episode.title %></h4>
+      <p class="service-description"><%= @episode.description %></p>
+    </div>
+  </div>
 </div>
+
+
+
+
 
 <%= render partial: 'comments/form', locals: { commentable: @episode } %>
 <%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @episode } %>
+
+
+
+
+

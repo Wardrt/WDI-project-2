@@ -26,6 +26,7 @@ p2 = Podcast.create!(title: "Let's Make Mistakes Together",
 
 e1p2 = p2.episodes.create!(title: "When did you first jerk it? #1",
                           description: "Philip DeFranco decided to jump back into longer form content on a whim. Heres that first weird conversation...",
+                          guest: "Steve Zaragoza",
                           url: "234584773")
 
 
