@@ -10,7 +10,9 @@ class EpisodesController < ApplicationController
     @episode = Episode.find(params[:id])
     @podcast  = Podcast.find(params[:podcast_id])
     @comments = @episode.comment_threads
-    @new_comment = Comment.build_from(@episode, current_user.id, "")
+    if !!current_user
+      @new_comment = Comment.build_from(@episode, current_user.id, "")
+    end
   end
 
 end
