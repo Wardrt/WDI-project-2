@@ -1,0 +1,59 @@
+<% comments.each do |comment| %>  
+  <div class="comments-show">
+    <h6 class="byline">
+      <% if comment.user.username == nil %>
+        <a href="/users/<%= comment.user_id %>">
+          <% if comment.user.image == nil %>
+            <i class="icon"></i>
+          <% else %>
+            <img src="<%= comment.user.image %>">
+          <% end %>
+        <%= comment.user.email %></a>
+      <% else %>
+        <a href="/users/<%= comment.user.id %>">
+          <% if comment.user.image == nil %>
+            <i class="icon"></i>
+          <% else %>
+            <img src="<%= comment.user.image %>">
+          <% end %>
+        <%= comment.user.username %></a>
+      <% end %>
+      <small>
+        <span class="data">
+          Added <%= distance_of_time_in_words(Time.now, comment.created_at) %> ago
+        </span>
+      </small>
+    </h6>
+    <div class="comment">
+      <p><%= comment.body %><br></p>
+      <div class="comment-nav"><a href="#" class="comment-reply">reply</a></div>
+      
+      <div class="reply-form">
+        <%= form_for [@podcast, @episode, @new_comment] do |f| %>
+          <%= f.hidden_field :commentable_id, value: @new_comment.commentable_id %>
+          <%= f.hidden_field :commentable_type, value: @new_comment.commentable_type %>
+          <%= f.hidden_field :comment_id, value: comment.id %>
+          <div class="field form-group">
+            <%= f.text_area :body, class: 'form-control' %>
+          </div>
+          <div class="field form-group">
+            <%= submit_tag "Post Reply", class: 'button' %>
+          </div>
+        <% end %>
+      </div>
+
+    </div>
+    <%= render partial: "comments/reply", locals: {comments: comment.children} %>
+  </div>
+<% end %>  
+
+
+
+
+
+
+
+
+
+
+

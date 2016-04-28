@@ -18,8 +18,13 @@
   </div>
 <% end %>
 <div class="row">
-  <div class="medium-12 columns"> 
-    <%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @episode } %>
+  <div class="comments-header">  
+    <h4>
+      <%= @episode.comment_threads.count == 0 ? "no" : @episode.comment_threads.count %> comments
+    </h4>
+  </div>
+  <div class="medium-12 columns comments-container"> 
+    <%= render partial: "comments/reply", locals: {comments: @episode.root_comments} %>
   </div>
 </div>
 

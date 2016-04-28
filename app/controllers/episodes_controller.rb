@@ -8,8 +8,9 @@ class EpisodesController < ApplicationController
 
   def show
     @episode = Episode.find(params[:id])
-    @comments = @episode.comments
     @podcast  = Podcast.find(params[:podcast_id])
+    @comments = @episode.comment_threads
+    @new_comment = Comment.build_from(@episode, current_user.id, "")
   end
 
 end

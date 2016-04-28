@@ -15,7 +15,12 @@
 //= require foundation
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ $(document).foundation(); 
 
-
-
+  $('a.comment-reply').on("click", function(e) {
+    e.preventDefault();
+    $(this).closest('.comment').find('.reply-form').toggle()
+    return
+  })
+  
+});
