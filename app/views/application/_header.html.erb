@@ -6,7 +6,7 @@
           <h1><a href="/" class="logo-name"><img src="/images/logo.png" class="logo">Podable</a></h1>
         </li>
         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href=""><span></span></a></li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
 
       <section class="top-bar-section">
@@ -19,7 +19,7 @@
               <li class="name"><h1 class="header-background-color"><a href="/users/<%= current_user.id %>" style="background-color: #008CBA;"><%= current_user.username %></a></h1></li>
             <% end %>
             <li class="has-dropdown">
-              <a href="" class="header-background-color" style="background-color: #008CBA;">Profile</a>
+              <a href="#" class="header-background-color" style="background-color: #008CBA;">Profile</a>
               <ul class="dropdown">
                 <li><a href="/users/<%= current_user.id %>" class="header-background-color" style="background-color: #008CBA;">View Profile</a></li>
                 <li><a href="/users/<%= current_user.id %>/edit" class="header-background-color" style="background-color: #008CBA;">Edit Profile</a></li>
