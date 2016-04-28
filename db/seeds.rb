@@ -71,3 +71,155 @@ e5p2 = p2.episodes.create!(title: "My Wife Gives Me Cry-Boners #5",
 
 
 
+p3 = Podcast.create!(title: "Tiesto's Club Life",
+                    description: "ClubLife by Tiësto podcasts debut weekly, featuring the hottest remixes and releases in dance music right now.",
+                    image: "/images/tiesto-club-life.jpg",
+                    genre: "Music, EDM",
+                    podcaster: "Tiesto")
+
+e1p3 = p3.episodes.create!(title: "Podcast 345",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e2p3 = p3.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e3p3 = p3.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e4p3 = p3.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e5p3 = p3.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+
+
+
+
+
+
+p4 = Podcast.create!(title: "Mainstage Podcast",
+                    description: "Mainstage by W&W podcasts debut weekly, featuring some of the hottest beats ixed by the famous duo.",
+                    image: "/images/Mainstage.jpg",
+                    genre: "Music, EDM",
+                    podcaster: "W&W")
+
+e1p4 = p4.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e2p4 = p4.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e3p4 = p4.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e4p4 = p4.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e5p4 = p4.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+
+
+
+
+
+
+p5 = Podcast.create!(title: "If I Were You",
+                    description: "Amir Blumenfeld and Jake Hurwitz offer advice in areas they're qualified to talk about. Also in areas they're not qualified to talk about.",
+                    image: "/images/if-i-were-you.jpg",
+                    genre: "Comedy",
+                    podcaster: "Jake Hurwitz and Amir Blumenfeld")
+
+e1p5 = p5.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e2p5 = p5.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e3p5 = p5.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e4p5 = p5.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e5p5 = p5.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+
+
+
+
+
+
+p6 = Podcast.create!(title: "Waking Up With Sam Harris",
+                    description: "Join neuroscientist, philosopher, and best-selling author Sam Harris as he explores important and controversial questions about the human mind, society, and current events.",
+                    image: "/images/waking-up.jpg",
+                    genre: "Philosophy, Life",
+                    podcaster: "Sam Harris")
+
+e1p6 = p6.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e2p6 = p6.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e3p6 = p6.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e4p6 = p6.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+e5p6 = p6.episodes.create!(title: "",
+                          description: "",
+                          guest: "",
+                          url: "")
+
+
+
+
+
+
+
+
+
+
+
