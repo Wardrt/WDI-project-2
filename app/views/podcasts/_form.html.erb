@@ -3,7 +3,7 @@
     <ul class="inline-list">
       <%= search_form_for @q do |f| %>
         <div class="small-8 columns input">
-          <%= f.text_field :title_or_podcaster_cont, placeholder: 'Search...' %>
+          <%= f.text_field :title_or_podcaster_or_genre_cont, placeholder: 'Search by podcast, host or genre' %>
         </div>
         <div class="small-4 columns">
           <%= f.submit "Submit", class: "button" %>
