@@ -1,6 +1,7 @@
-User.delete_all
-Podcast.delete_all
+Comment.delete_all
+Follow.delete_all
 Episode.delete_all
+Podcast.delete_all
 
 p1 = Podcast.create!(title: "She Didn't Text Back",
                     description: "The She Didn't Text Back Podcast showcases Daren VonGirdner and William Haynes discussing everything from relationship issues to instagram baddies. If you desire more- well, go somewhere else.",
@@ -197,6 +198,44 @@ e5p6 = p6.episodes.create!(title: "The Virtues Of A Cold Blood",
                           description: "In this episode of the Waking Up podcast, Sam Harris speaks with psychologist Paul Bloom about the limitations of empathy as a guide to moral reasoning.",
                           guest: "Paul Bloom",
                           url: "216946096")
+
+
+
+
+
+
+
+p7 = Podcast.create!(title: "The Talk Of Shame Show",
+                    description: "Embarrassed Guests telling Embarrassing Stories, hosted by Streeter Seidell.",
+                    image: "/images/shame.jpg",
+                    genre: "Comedy, Story",
+                    podcaster: "Streeter Seidell")
+
+e1p7 = p7.episodes.create!(title: "Ep 1 - Adam Wade and the Litterbox of Doom",
+                          description: "Episode 1 of The Talk of Shame, featuring 18-time MOTH slam winner Adam Wade. Adam talks about love, cats and something nobody wants to happen to them on the PATH train.",
+                          guest: "Adam Wade",
+                          url: "149715786")
+
+e2p7 = p7.episodes.create!(title: "Ep 2 - Dan Gurewitch and the Horrible AM Booty Call",
+                          description: "Last Week Tonight writer Dan Gurewitch spins a tragic tale about a wonderful evening that turned into a horrible morning.",
+                          guest: "Dan Gurewitch",
+                          url: "153888289")
+
+e3p7 = p7.episodes.create!(title: "Ep 3 - Amir Blumenfeld and the Kiss that Wasn't",
+                          description: "Amir Blumenfeld tells a sexy tale of rejection and adventure one fateful night in San Francisco. PLUS, the first edition of a British Person Reads Your Embarrassing Stories!",
+                          guest: "Amir Blumenfeld",
+                          url: "154778523")
+
+e4p7 = p7.episodes.create!(title: "Ep 4 - Sue Smith and the Diva Cup of Doom",
+                          description: "The hysterical Sue Smith stopped by to educate and entertain with a tale about the one position in which a diva cup doesn't cut it. PLUS! Another installment of A British Person Reads Your Embarrassing Stories.",
+                          guest: "Sue Smith",
+                          url: "156012208")
+
+e5p7 = p7.episodes.create!(title: "Ep 5 - Jake Hurwitz and the Piss that Never Started",
+                          description: "Jake Hurwitz, of Jake and Amir / If I Were You, talks about one of the lesser known side effects of taking MDMA. Plus, a British Person Reads Your Embarrassing Stories.",
+                          guest: "Jake Hurwitz",
+                          url: "157009250")
+
 
 
 
