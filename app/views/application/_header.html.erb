@@ -13,7 +13,7 @@
         <!-- Right Nav Section -->
         <ul class="right header-background-color">
           <% if current_user %>
-            <% if current_user.username == nil %>
+            <% if (current_user.username == nil) || (current_user.username == "") %>
               <li class="name"><h1 class="header-background-color"><a href="/users/<%= current_user.id %>" style="background-color: #008CBA;"><%= current_user.email %></a></h1></li>
             <% else %>
               <li class="name"><h1 class="header-background-color"><a href="/users/<%= current_user.id %>" style="background-color: #008CBA;"><%= current_user.username %></a></h1></li>

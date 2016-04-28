@@ -1,13 +1,13 @@
 <div class="row" style="margin-top: 45px;">
   <div class="large-4 large-offset-4 columns">
     <div class="panel text-center">
-      <% if @user.image == nil %>
-        <img class="circle" src="/images/placeholder-user.png">
+      <% if !@user.image.blank? %>
+        <%= image_tag @user.image, class: "circle" %>
       <% else %>
-        <img class="circle" src="<%= @user.image %>">
+        <%= image_tag "profile-placeholder.jpg", class: "circle" %>
       <% end %>
       <h3><%= @user.name %></h3>
-      <% if @user.username == nil %>
+      <% if (@user.username == nil) || (@user.username == "") %>
         <p><%= @user.email %></p>
       <% else %>
         <p><%= @user.username %></p>

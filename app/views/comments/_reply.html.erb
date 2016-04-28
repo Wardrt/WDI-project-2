@@ -1,20 +1,20 @@
 <% comments.each do |comment| %>  
   <div class="comments-show">
     <h6 class="byline">
-      <% if comment.user.username == nil %>
+      <% if (comment.user.username == nil) || (comment.user.username == "") %>
         <a href="/users/<%= comment.user_id %>">
-          <% if comment.user.image == nil %>
-            <img src="/images/placeholder-user.png">
-          <% else %>
+          <% if !comment.user.image.blank? %>
             <img src="<%= comment.user.image %>">
+          <% else %>
+            <%= image_tag "profile-placeholder.jpg" %>
           <% end %>
         <%= comment.user.email %></a>
       <% else %>
         <a href="/users/<%= comment.user.id %>">
-          <% if comment.user.image == nil %>
-            <img src="/images/placeholder-user.png">
-          <% else %>
+          <% if !comment.user.image.blank? %>
             <img src="<%= comment.user.image %>">
+          <% else %>
+            <%= image_tag "profile-placeholder.jpg" %>
           <% end %>
         <%= comment.user.username %></a>
       <% end %>
