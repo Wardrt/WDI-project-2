@@ -78,29 +78,24 @@ p3 = Podcast.create!(title: "Tiesto's Club Life",
                     podcaster: "Tiesto")
 
 e1p3 = p3.episodes.create!(title: "Podcast 345",
-                          description: "",
-                          guest: "",
-                          url: "")
+                          description: "Listen to some trance tunes with Tiesto.",
+                          url: "120277316")
 
-e2p3 = p3.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e2p3 = p3.episodes.create!(title: "Podcast 346",
+                          description: "Listen to some club bangers with Tiesto.",
+                          url: "120742918")
 
-e3p3 = p3.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e3p3 = p3.episodes.create!(title: "Podcast 347",
+                          description: "Listen to some hardestyle-esque songs with Tiesto.",
+                          url: "121860821")
 
-e4p3 = p3.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e4p3 = p3.episodes.create!(title: "Podcast 348",
+                          description: "Listen to a variety of EDM in this weeks podcast with Tiesto.",
+                          url: "122886678")
 
-e5p3 = p3.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e5p3 = p3.episodes.create!(title: "Podcast 349",
+                          description: "Listen to some trance tunes with Tiesto.",
+                          url: "123585337")
 
 
 
@@ -109,35 +104,30 @@ e5p3 = p3.episodes.create!(title: "",
 
 
 p4 = Podcast.create!(title: "Mainstage Podcast",
-                    description: "Mainstage by W&W podcasts debut weekly, featuring some of the hottest beats ixed by the famous duo.",
+                    description: "Mainstage by W&W podcasts debut weekly, featuring some of the hottest beats mixed by the famous duo.",
                     image: "/images/Mainstage.jpg",
                     genre: "Music, EDM",
                     podcaster: "W&W")
 
-e1p4 = p4.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e1p4 = p4.episodes.create!(title: "229",
+                          description: "Listen to some classic beats on this weeks podcast.",
+                          url: "173736447")
 
-e2p4 = p4.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e2p4 = p4.episodes.create!(title: "230",
+                          description: "Listen to some trance tunes on this weeks podcast.",
+                          url: "174788225")
 
-e3p4 = p4.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e3p4 = p4.episodes.create!(title: "231",
+                          description: "Listen to some classic trance tunes on this weeks podcast.",
+                          url: "175860210")
 
-e4p4 = p4.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e4p4 = p4.episodes.create!(title: "232",
+                          description: "Listen to some of the hottest EDM tunes on this weeks podcast.",
+                          url: "176953680")
 
-e5p4 = p4.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e5p4 = p4.episodes.create!(title: "233",
+                          description: "Listen to some classic beats on this weeks podcast.",
+                          url: "178050851")
 
 
 
@@ -151,30 +141,25 @@ p5 = Podcast.create!(title: "If I Were You",
                     genre: "Comedy",
                     podcaster: "Jake Hurwitz and Amir Blumenfeld")
 
-e1p5 = p5.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e1p5 = p5.episodes.create!(title: "Starbucks #1",
+                          description: "Our first episode! We hope you like it. This episode includes advice on asking out your barista at Starbucks, and other sticky situations...",
+                          url: "91490990")
 
-e2p5 = p5.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e2p5 = p5.episodes.create!(title: "Bounce #2",
+                          description: "In today's episode we discuss long distance relationships, working out, and most importantly, cats.",
+                          url: "92462050")
 
-e3p5 = p5.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e3p5 = p5.episodes.create!(title: "Noodles #3",
+                          description: "In this episode we discuss cool kids, smelly food, and whether or not we should edit our terrible mistakes. (Spoiler alert: We don't.)",
+                          url: "93002056")
 
-e4p5 = p5.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e4p5 = p5.episodes.create!(title: "Cheeseburger #4",
+                          description: "In this episode we discuss happiness, breaking up, and what heaven is like.",
+                          url: "94070874")
 
-e5p5 = p5.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e5p5 = p5.episodes.create!(title: "Seize The Cheese #5",
+                          description: "In this episode we discuss cool dads, nerdy friends, and foul balls.",
+                          url: "95169705")
 
 
 
@@ -188,30 +173,30 @@ p6 = Podcast.create!(title: "Waking Up With Sam Harris",
                     genre: "Philosophy, Life",
                     podcaster: "Sam Harris")
 
-e1p6 = p6.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e1p6 = p6.episodes.create!(title: "Faith vs. Fact",
+                          description: "In this episode, Sam Harris interviews biologist Jerry Coyne about his new book, 'Faith vs. Fact: Why Science and Religion are Incompatible.'",
+                          guest: "Jerry Coyne",
+                          url: "206269759")
 
-e2p6 = p6.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e2p6 = p6.episodes.create!(title: "Shouldering The Burden Of History",
+                          description: "In this episode, Sam Harris and Dan Carlin (host of the Hardcore History and Common Sense podcasts) discuss American interventionism, the war on terror, and related topics.",
+                          guest: "Dan Carlin",
+                          url: "212195254")
 
-e3p6 = p6.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e3p6 = p6.episodes.create!(title: "Leaving The Church",
+                          description: "In this episode, Sam Harris speaks with Megan Phelps-Roper, granddaughter of Fred Phelps of the infamous Westboro Baptist Church.",
+                          guest: "Megan Phelps-Roper",
+                          url: "213152011")
 
-e4p6 = p6.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e4p6 = p6.episodes.create!(title: "The Moral Gaze",
+                          description: "In this episode of the Waking Up podcast, Sam Harris speaks with the filmmaker Joshua Oppenheimer about his remarkable documentaries, 'The Act of Killing' and 'The Look of Silence.'",
+                          guest: "Joshua Oppenheimer",
+                          url: "215645725")
 
-e5p6 = p6.episodes.create!(title: "",
-                          description: "",
-                          guest: "",
-                          url: "")
+e5p6 = p6.episodes.create!(title: "The Virtues Of A Cold Blood",
+                          description: "In this episode of the Waking Up podcast, Sam Harris speaks with psychologist Paul Bloom about the limitations of empathy as a guide to moral reasoning.",
+                          guest: "Paul Bloom",
+                          url: "216946096")
 
 
 
